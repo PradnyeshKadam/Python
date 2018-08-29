@@ -1,0 +1,15 @@
+#The Minion Game --HackerRank
+
+s = input()
+c1 = 0
+c2 = 0
+
+for i in range(0,len(s)):
+    for j in range(i+1,len(s)+1):
+        c = s[i:j]
+        print(c)
+        if c[:1] in ['a','A','i','I','o','O','u','U','e','E']:
+            c1 += 1
+        else :
+            c2 += 1
+print(c1,c2)
